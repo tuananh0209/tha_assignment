@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "a0e5b147-bc86-4e7a-8a59-70740f6d1b4f",
+		"name": "assigment web express server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12683282",
+		"_collection_link": "https://warped-satellite-511477.postman.co/workspace/My-Workspace~9681acca-d5c6-4ae4-863b-d52ed0aeb21a/collection/12683282-a0e5b147-bc86-4e7a-8a59-70740f6d1b4f?action=share&source=collection_link&creator=12683282"
+	},
+	"item": [
+		{
+			"name": "GET user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/v1/user/?id=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/v1/user/get-all",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"get-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "staff123",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "staff232@staff.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "11",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/v1/user/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/v1/user/?id=6",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE user",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "7",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "user_2",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "user",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "is_staff",
+							"value": "false",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/v1/user/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
